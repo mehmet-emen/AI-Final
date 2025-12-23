@@ -1,5 +1,5 @@
 // mskü kordinatları
-var map = L.map('map').setView([37.1670, 28.3710], 15);// Örnek koordinat
+var map = L.map('map').setView([37.1670, 28.3710], 15);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
@@ -23,7 +23,7 @@ fetch('graph-data.json')
             let lng = data.coordinates[nodeName][1];
 
             let marker = L.marker([lat, lng]).addTo(map);
-            marker.bindPopup(nodeName); // Üstüne gelince ismi yazsın
+            marker.bindPopup(nodeName);
 
             marker.on('click', function() {
                 handleNodeClick(nodeName);
