@@ -47,14 +47,14 @@ def dijkstra(graph_data, start_node, end_node):
 
     return {"status": "failure", "message": "Yol bulunamadı."}
 
-FILE_PATH = r'C:\Users\mehme\PycharmProjects\AI-Final\graph-data.json'
+FILE_PATH = r'.\AI-Final\graph-data.json'
 
 try:
     print(f"Veri yükleniyor: {FILE_PATH} ...")
     global_graph_data = load_graph_data(FILE_PATH)
     print("Veri başarıyla yüklendi!")
 except Exception as e:
-    print(f"HATA: Veri dosyası yüklenemedi! Hata kodu: {e}")
+    print(f" Veri dosyası yüklenemedi! Hata kodu: {e}")
     global_graph_data = {}
 
 @app.route('/api/shortest-path', methods=['GET'])
