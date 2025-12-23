@@ -1,0 +1,78 @@
+{
+  "nodes": [
+    "A_Kapisi",
+    "Rektorluk",
+    "Kutuphane",
+    "Mavi_Cati",
+    "Egitim_Fakultesi",
+    "Muhendislik_Fakultesi",
+    "Fen_Fakultesi",
+    "Spor_Salonu",
+    "Tip_Fakultesi",
+    "KYK_Yurtlar"
+  ],
+  "edges": {
+    "A_Kapisi": [
+      {"node": "Rektorluk", "weight": 400},
+      {"node": "Egitim_Fakultesi", "weight": 350}
+    ],
+    "Rektorluk": [
+      {"node": "A_Kapisi", "weight": 400},
+      {"node": "Kutuphane", "weight": 150},
+      {"node": "Mavi_Cati", "weight": 200},
+      {"node": "Egitim_Fakultesi", "weight": 250}
+    ],
+    "Kutuphane": [
+      {"node": "Rektorluk", "weight": 150},
+      {"node": "Mavi_Cati", "weight": 100},
+      {"node": "Fen_Fakultesi", "weight": 300}
+    ],
+    "Mavi_Cati": [
+      {"node": "Rektorluk", "weight": 200},
+      {"node": "Kutuphane", "weight": 100},
+      {"node": "Muhendislik_Fakultesi", "weight": 450},
+      {"node": "Spor_Salonu", "weight": 500},
+      {"node": "Fen_Fakultesi", "weight": 250}
+    ],
+    "Egitim_Fakultesi": [
+      {"node": "A_Kapisi", "weight": 350},
+      {"node": "Rektorluk", "weight": 250},
+      {"node": "Spor_Salonu", "weight": 600}
+    ],
+    "Muhendislik_Fakultesi": [
+      {"node": "Mavi_Cati", "weight": 450},
+      {"node": "Fen_Fakultesi", "weight": 200},
+      {"node": "Tip_Fakultesi", "weight": 550}
+    ],
+    "Fen_Fakultesi": [
+      {"node": "Kutuphane", "weight": 300},
+      {"node": "Mavi_Cati", "weight": 250},
+      {"node": "Muhendislik_Fakultesi", "weight": 200}
+    ],
+    "Spor_Salonu": [
+      {"node": "Mavi_Cati", "weight": 500},
+      {"node": "Egitim_Fakultesi", "weight": 600},
+      {"node": "KYK_Yurtlar", "weight": 300}
+    ],
+    "Tip_Fakultesi": [
+      {"node": "Muhendislik_Fakultesi", "weight": 550},
+      {"node": "KYK_Yurtlar", "weight": 700}
+    ],
+    "KYK_Yurtlar": [
+      {"node": "Spor_Salonu", "weight": 300},
+      {"node": "Tip_Fakultesi", "weight": 700}
+    ]
+  },
+  "coordinates": {
+    "A_Kapisi": [37.1715, 28.3680],
+    "Rektorluk": [37.1685, 28.3695],
+    "Kutuphane": [37.1678, 28.3705],
+    "Mavi_Cati": [37.1670, 28.3710],
+    "Egitim_Fakultesi": [37.1690, 28.3665],
+    "Muhendislik_Fakultesi": [37.1640, 28.3740],
+    "Fen_Fakultesi": [37.1655, 28.3725],
+    "Spor_Salonu": [37.1635, 28.3685],
+    "Tip_Fakultesi": [37.1610, 28.3760],
+    "KYK_Yurtlar": [37.1600, 28.3650]
+  }
+}
